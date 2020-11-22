@@ -26,7 +26,7 @@ func processIncomingPacket(readFd int, onMessage func(data []byte, timeStamp uin
 	var length uint16
 	var timeStamp uint64
 
-	defer syscall.Close(readFd)
+	//defer syscall.Close(readFd)
 
 	for {
 		lengthBytes := make([]byte, 2)
